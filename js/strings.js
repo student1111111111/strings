@@ -4,9 +4,8 @@ let str = ["Hello world", "12 pm", "15 miles", "rabbit"]
 let patt1= /d+/g
  
 for (let i = 0; i < str.length; i++) {
-    let res = patt1.test(str[i])
-   if (res == true) {
-       document.write(res)
+   if (patt1.test(str[i])) {
+       document.write(str[i])
    }
 }
 
@@ -22,3 +21,8 @@ console.log(result)
 
 
 
+// Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку
+
+var st = "we're bought 15 oranges 5 books and 11 pens "
+var pat = /\bdd\b/
+var ress = st.match(pat);
