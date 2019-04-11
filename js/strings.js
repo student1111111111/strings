@@ -3,7 +3,7 @@
 let str = ["Hello world", "12 pm", "15 miles", "rabbit"]
 let patt1= /d+/g
  
-for (let i = 0; i < str.length; i++) {
+for (let i = 0; i < str.length; i++) { Можна було використати forEach
    if (patt1.test(str[i])) {
        document.write(str[i])
    }
@@ -15,7 +15,7 @@ for (let i = 0; i < str.length; i++) {
 // Дано рядок тексту, вивести усі числа, які є у тексті.
 
 var strr = "10 onions and 5 tomatoes"
-var patt2 = /d+/g
+var patt2 = /d+/g                       Не вистачає кінців слова \b
 var result = str.match(patt2)
 console.log(result)
 
