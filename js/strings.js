@@ -24,5 +24,10 @@ console.log(result)
 // Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку
 
 var st = "we're bought 15 oranges 5 books and 11 pens "
-var pat = /\bdd\b/
+var pat = /\bd{2}\b/
 var ress = st.match(pat);
+
+
+
+
+
